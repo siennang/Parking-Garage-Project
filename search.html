@@ -1,0 +1,67 @@
+<!-- search page-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Parking Company</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Google maps API key-->
+    <!--Allows us to gather information about locations-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX8XhtTBG7OwtaHVafMu8khM_jtiLVmFU&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="searchScript.js"></script>
+    <!--Autocomplete feature-->
+    <script src="autocomplete.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="INDEX.html">The Parking Company</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="search.html">Search for Facilities</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-2">
+    <div class="container-option">
+        <!-- Content of the container-option div -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- monthly parking and hourly text-->
+                <h1>Monthly and Hourly Parking Available</h1>
+                <p>Find monthly and hourly parking near you.</p>
+            </div>
+        <div class = "row">
+    <!-- get method -->
+    <!-- used to ask server to send back info -->
+    <!-- action -->
+    <!-- sends form data when form is submitted -->
+    <!-- therefore the data is sent to the search-->
+<form action="search.php" method="post">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="input-group-2">
+                <input type="text" class="form-control" placeholder="Search for Parking..." name="search" id="search_input">
+                <span class="input-group-btn-2">
+                    <button class="btn btn-default" type="submit" id="search_button">Search</button>
+                </span>
+            </div>
+        </div>
+    </div>
+</form>         
+</div>
+</div>
+</div>
+<!--This will hold the map-->
+<div id="map"></div>
+</body>
+</html>

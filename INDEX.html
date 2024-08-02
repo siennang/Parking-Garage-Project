@@ -1,0 +1,83 @@
+<!-- Index page -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Parking Company</title>
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--JQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--Google maps API key-->
+    <!--Allows us to gather information about locations-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBX8XhtTBG7OwtaHVafMu8khM_jtiLVmFU&libraries=places"></script>
+    <!--Autocomplete feature-->
+    <script src="autocomplete.js"></script>
+    <!--Bootstrap framework-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Javascript to handle user input and interaction with HTML page-->
+    <script src="script.js"></script>
+    <!--Javascrip to fetch data-->
+    <script src="fetchData.js"></script>
+</head>
+
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="INDEX.html">The Parking Company</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="search.html">Search for Facilities</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- JUMBOTRON -->
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Find Nearby Parking</h1>
+        <p>Resize this responsive page to see the effect!</p>
+    </div>
+    <div class="container">
+        <form action="searc.php" method="post">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for Parking..." name="search" id="search_input">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Search</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>        
+</div>
+
+<!-- GRID -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Testimonial 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Testimonial 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Testimonial 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
